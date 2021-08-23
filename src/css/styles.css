@@ -21,6 +21,7 @@
   font-family: 'Amatic SC', cursive;
   min-width: 200px;
   height: 30px;
+  border-width: 2px;
   font-size: 24px;
   padding: 5px;
 }
@@ -30,18 +31,29 @@
   text-align: center;
 }
 
-/* .country__names {
-  margin: 0 auto;
-  text-align: left;
-} */
+.country__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.country__names {
+  display: flex;
+  margin-top: 20px;
+}
 
 .country__about {
   width: 50%;
   list-style: none;
 }
 
+.country__about li {
+  margin-bottom: 20px;
+}
+
 .country__flag {
-  width: 50%;
+  width: 40%;
 }
 
 .country__list {
@@ -55,4 +67,13 @@
   align-items: center;
   background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
     url(../images/Globe.jpeg);
+}
+
+.country__lang {
+  list-style: none;
+  padding: 0;
+}
+
+.country__item {
+  padding-left: 20px;
 }
