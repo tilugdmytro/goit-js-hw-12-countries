@@ -38,7 +38,7 @@ function searchCountry(e) {
         }
       })
       .catch(err => {
-        error({ text: 'Empty request!', delay: 1500 });
+        error({ text: 'Network error!', delay: 1500 });
       });
   }
 }
