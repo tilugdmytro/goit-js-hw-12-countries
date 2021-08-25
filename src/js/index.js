@@ -16,7 +16,7 @@ refs.input.addEventListener('input', debounce(searchCountry, 500));
 function searchCountry(e) {
   resetOutput();
   const searchQuery = e.target.value;
-  if (searchQuery) {
+  if (searchQuery.trim() === ' ') {
     makeCountryCard(searchQuery);
   }
 
